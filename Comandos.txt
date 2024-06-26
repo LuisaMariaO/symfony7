@@ -1,0 +1,17 @@
+symfony new [nombre] --full
+symfony serve 
+symfony serve -d !Para seguir usando la terminal
+symfony server:log
+symfony server:status
+symfony server:stop
+
+composer require doctrine/orm
+composer require symfony/maker-bundle --dev
+composer require doctrine/orm doctrine/doctrine-bundle #En caso de error
+
+php bin/console make:entity Client
+php bin/console make:migration
+php bin/console doctrine:migrations:migrate
+php bin/console make:crud Client
+php bin/console debug:router
+
