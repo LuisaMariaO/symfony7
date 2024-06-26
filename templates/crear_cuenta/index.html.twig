@@ -1,0 +1,13 @@
+{# templates/crear_cuenta/index.html.twig #}
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Creación de Cuenta de ahorro</h1>
+
+    {{ form_start(form) }}
+        {{ form_row(form.cliente) }}
+        {{ form_row(form.saldo) }}
+
+        <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+    {{ form_end(form) }}
+{% endblock %}
